@@ -1,92 +1,91 @@
 html {
-    background-color: #dce4ec;
-    color: rgb(0, 0, 0);
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: #dce4ec;
-    color: #333;
-  }
-  
-  nav.navbar {
-    background-color: #95b2c4;
-    flex-direction: row;
-  }
-  
-  navbar navbar-expand-lg 
-  body {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    padding-inline: 5em;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 1em;
-    padding-bottom: 2em;
-  }
-  nav.navbar {
-    background-color: #95b2c4;
-  }
-  .navbar-brand {
-    padding-left: 30px;
-  }
+  background-color: #dce4ec;
+  color: rgb(0, 0, 0);
+}
 
-  .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    justify-content: center;
-    gap: 10px; /* Adjust the gap between images */
-  }
-  
-  /* Style for individual images */
-  .image-container img {
-    max-width: 50%; /* Make sure images don't exceed their container width */
-    height: auto; /* Maintain aspect ratio */
-  }
-  h1 {
-    font-size: 2.5em;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 2em;
-    text-align: center;
-  }
-  
-  a {
-    color: rgb(48, 48, 83);
-    text-align: center;
-  }
-  
-  a:visited {
-    color: rgb(48, 48, 83);
-  }
-  
-  img {
-    /* width: 60%; */
-    max-height: 80vh;
-    align-items: center;
-  }
-  
-  .flex-table {
-    width: 80%;
-    display: flex;
-    flex-flow: column wrap;
-  }
-  
-  .flex-row {
-    display: flex;
-    flex-flow: row;
-  }
-  
-  .flex-item {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    border: 1px #b3b2b2 solid;
-    padding-inline: 1em;
-  }
-  
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dce4ec;
+  color: #333;
+}
+
+nav.navbar {
+  background-color: #95b2c4;
+  flex-direction: row;
+}
+
+navbar navbar-expand-lg body {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-inline: 5em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+nav.navbar {
+  background-color: #95b2c4;
+}
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between images */
+}
+
+/* Style for individual images */
+.image-container img {
+  max-width: 50%; /* Make sure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+a {
+  color: rgb(48, 48, 83);
+  text-align: center;
+}
+
+a:visited {
+  color: rgb(48, 48, 83);
+}
+
+img {
+  /* width: 60%; */
+  max-height: 80vh;
+  align-items: center;
+}
+
+.flex-table {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.flex-item {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 1px #b3b2b2 solid;
+  padding-inline: 1em;
+}
