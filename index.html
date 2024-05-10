@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="carousel.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #dce4ec;
+        color: #333;
+      }
+
+      nav.navbar {
+        background-color: #95b2c4;
+      }
+
+      /* Your existing CSS here */
+
+      /* font-weight: bold; */
+
+      /* CSS for the transition effect */
+      .shc-transition-button {
+        background-color: #ea9090; /* Initial background color (black) */
+        color: #000000; /* Initial text color (white) */
+        transition: background-color 0.3s; /* Transition the background color over 0.3 seconds */
+      }
+
+      
+
+      .shc-transition-button:hover {
+        background-color: #eea9a9; /* New background color (green) on hover #98BB94 */
+        color: #000000; /* Text color remains white on hover */
+        font-weight: bold; /* Make text bold on hover state */
+      }
+
+      .shc-transition-button:active {
+        font-weight: bold; /* Make text bold on active state */
+      }
+
+
+      .footer-container {
+         background-color: #95b2c4;
+         color: #000000;
+         padding: 50px 0;
+         text-align: center;
+         width: 100%;
+}
+
+      .navbar-brand {
+        padding-left: 50px;
+      }
+      container images-container {
+        size-adjust: 25%;
+      }
+
+
+      
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Marleni Angel</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse ms-5 justify-content-right text-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active text-center">
+            <a class="nav-link" href="index.html"
+              >PROJECTS <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://drive.google.com/file/d/1liT3uB-vATI5K9svn8WBHl3qfbrEynG9/view?usp=sharing"
+              >RESUME</a
+            >
+      </div>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="d-flex container spacing-section">
+      <div class="row">
+        <div class="col section-1">
+          <div class="text">
+            <h2 class="main-header">Hey there, I'm Marleni!</h2>
+            <p class="description">
+              A student sudying Computer Science and Visual Art
+              <span style="color: #734214">@Brown University</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-flex container section-1 spacing-section arrow-section justify-content-center align-items-center"
+    >
+      <div class="row">
+        <div class="col action-down">
+          <a class="arrow" id="projects" href="#shc-project">
+            <p class="scroll" style="color: rgb(23, 23, 107)">View My Work!</p>
+            <div class="bounce">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container images-container">
+      <div class="row">
+        <div class="col-sm-5 mx-4">
+          <div class="content-overlay text-center">
+            <div id="shc-project"></div>
+            <a href="iterative-design.html">
+              <img
+                src="assets/iterative-design-img/Screen Shot 2024-05-09 at 10.12.41 PM.png"
+                class="content-image rounded"
+                style="max-width: 100%; height: auto;"
+                
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 d-flex align-items-center">
+          <div class="content-overlay">
+            <div class="personas-design-type">
+              CLASS PROJECT, ITERATIVE DESIGN, UI/UX DESIGN
+            </div>
+            <div class="personas-title mt-2">
+              A Data Visualization Project to Motivate Patients On Their Health Journey
+            </div>
+            <a
+              href="iterative-design.html"
+              class="btn transition-button shc-transition-button mt-2"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container images-container">
+      <div class="row">
+        <div class="col-sm-5 mx-4">
+          <div class="content-overlay text-center">
+            <a href="development.html">
+              <img
+                class="content-image rounded"
+                src="assets/development-img/thumbnaildev.png"
+                style="max-width: 100%; height: auto;"
+                
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 d-flex align-items-center">
+          <div class="content-overlay">
+            <div class="personas-design-type">
+                CLASS PROJECT, DEVELOPMENT, UI/UX DESIGN
+            </div>
+            <div class="personas-title mt-2">
+              Digitizing Vinyl Shopping Experience 
+            </div>
+            <a
+              href="development.html"
+              class="btn transition-button shc-transition-button mt-2"
+              >View Project</a
+            >
+            <!-- target="_blank -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container images-container">
+      <div class="row">
+        <div class="col-sm-5 mx-4">
+          <div class="content-overlay text-center">
+            <a href="responsive-redesign.html">
+              <img
+                src="assets/responsive-redesign-img/Hi-fi Desktop.png"
+                class="content-image rounded"
+                style="max-width: 100%; height: 100%;"
+                
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 d-flex align-items-center">
+          <div class="content-overlay">
+            <div class="personas-design-type">
+              CLASS PROJECT, RESPONSIVE REDESIGN, UI/UX DESIGN
+            </div>
+            <div class="personas-title mt-2">
+              Redesigning An Existing Yoga Website For Responsiveness And Greater Accessibility 
+            </div>
+            <a
+              href="responsive-redesign.html"
+              class="btn transition-button shc-transition-button"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="footer-container" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="titles text">Want to learn more?</h3>
+                    <p class="text">
+                        Shoot me an email at
+                        <span style="color: #141673">marleni_angel@brown.edu</span> if you
+                        have any questions/feedback and would like to explore my work further. I'm always happy to chat!
+                      </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="container footer-container">
+
+          <h3 class="titles text">Interested in Learning More?</h3>
+          <br />
+          <p class="text">
+            Shoot me an email at
+            <span style="color: #141673">marleni_angel@brown.edu</span> if you
+            have any questions, would like to explore my work further, or want
+            to provide feedback. I'm always happy to chat!
+          </p>
+            Or, get to know me better through
+            <a
+              href="https://www.linkedin.com/in/lucy-nguyen-9a5a381bb/"
+              class="home-link"
+            >
+              <i class="fa-brands fa-linkedin linkedin">!</i>
+            </a>
+          </p>
+
+          <p class="footer text text-center"></p>
+        </div> -->
+    </div>
+  </body>
+</html>

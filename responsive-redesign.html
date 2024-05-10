@@ -1,0 +1,190 @@
+<!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+<!DOCTYPE html>
+
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+<script src="carousel.js"></script>
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="index.html">Marleni Angel</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse ms-5 justify-content-right text-center"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav">
+     
+      <li class="nav-item active text-center">
+        <a class="nav-link" href="index.html"
+        >PROJECTS <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://drive.google.com/file/d/1liT3uB-vATI5K9svn8WBHl3qfbrEynG9/view?usp=sharing"
+          >RESUME</a
+        >
+      
+  </div>
+</nav>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Redesign Writeup</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="responsive-redesign-styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Responsive Redesign</h1>
+    </header>
+
+    <br />
+    <br />
+
+    <h2>What is this?</h2>
+    <p>
+      For this project, I redesigned a website for a local yoga business in
+      Providence, RI. I wanted to help redesign a website that had glaring
+      usability issues
+      <br />
+      <br />
+      <a href="https://www.jala-studio.com/">Jala Studio</a>
+    </p>
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/JalaStudioOriginal.png" />
+      </div>
+    
+
+    At first, I solely chose this website because I noticed numerous glaring
+    accessibility issues with the homepage like responsiveness and low contrast.
+    Upon closer examination using different tools however, I soon discovered
+    other glaring issues:
+    <h3 Finding Problems></h3>
+    <p>
+      1. Users need to understand how to toggle on dropdown menus in order to
+      access the schedule for yoga events. This may not be intuitive especially
+      because of the very low contrast of the dropdown menu bar.
+      <br />
+      2. The dropdown menu bar is also not apparent to be clickable, affecting
+      the learnability of the site.
+      <br />
+      3. The traits of the dropdown menus are different in that not all lead to
+      a different site while a couple do. However, all minus the “home” have a
+      dropdown. This affects both the memorability and efficiency of the site.
+      <br />
+      4. To be able to purchase artwork or a gift certificate, the issue
+      persists of not being able to distinguish whether text is clickable or
+      not. Users have to hover over all text to figure out which words link to
+      relevant parts of the site which affects the learnability of the site.
+    </p>
+    <h3 Accessibility></h3>
+    As expected, WebAIM detected glaring contrast issues with the site. Most of the text on the home webpage has very low contrast against the white background site. Additionally, the tool detected a missing heading and empty and redundant links.  I also noticed the redundancy of one of the clickable elements but I was not aware of the missing headings. I agree with the low contrast errors because this was one of the main issues that caused me to choose this site to redesign.
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/Screen Shot 2024-05-09 at 10.38.07 PM.png" />
+      </div>
+    
+    <br />
+    <br />
+    <h2>Process</h2>
+    In order to begin thinking of a possible redesign, I turned to speed sketching to develop varying responsive iterations on how this website could change to solve the issues I found. 
+
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/speedsketches.png" />
+      </div>
+
+    I created several low-fi wireframes for desktop, mobile, and tablet on paper and then switched to figma to create these versions
+    pics
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/Low-fi Desktop.png" />
+      <img src="assets/responsive-redesign-img/Low-fi mobile.png" />
+      <img src="assets/responsive-redesign-img/Low-fi tablet.png" />
+      </div>
+
+    I then landed on final sketches which I then turned into figma files to begin prototyping a fresh, new, and responsive homepage 
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/Hi-fi Desktop.png" />
+      <img src="assets/responsive-redesign-img/Hi-fi Mobile.png" />
+      <img src="assets/responsive-redesign-img/Hi-fi Tablet.png" />
+      </div>
+
+    <br />
+   
+ 
+  
+
+    <br />
+    <br />
+    <h2>Solution</h2>
+    <p>
+        Finally, utilizing a style guide that kept some of the original websites style choices, I deployed this final responsive redesign for the Jala Studio website. In the end, I made some necessary choices to change fonts and colors to fix the glaring low-contrast issues. I also removed parts of the original homepage.
+    </p>
+    <div class="image-container">
+      <img src="assets/responsive-redesign-img/Screen Shot 2024-05-09 at 10.45.11 PM.png" />
+      </div>
+  
+   
+  </body>
+</html>

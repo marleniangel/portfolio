@@ -1,0 +1,155 @@
+<!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+  <!DOCTYPE html>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="carousel.js"></script>
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+    rel="stylesheet"
+  />
+
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="index.html">Marleni Angel</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse ms-5 justify-content-right text-center"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav">
+      <li class="nav-item active text-center">
+        <a class="nav-link" href="index.html"
+          >PROJECTS <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://drive.google.com/file/d/1liT3uB-vATI5K9svn8WBHl3qfbrEynG9/view?usp=sharing"
+          >RESUME</a
+        >
+  </div>
+</nav>
+
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Redesign Writeup</title>
+  <!-- import CSS styles -->
+  <link rel="stylesheet" href="development-styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Development</h1>
+  </header>
+
+  <br />
+  <br />
+  <h2>What is this?</h2>
+  <p>
+    For this project, I am experimenting with creating a list-based interface that would allow users to select items out of a given list and aggregate them. Additionally, this webpage would allow users to filter based on two separate criteria and sort based on one.
+  </p>
+  <div class="image-container">
+    <img src="assets/development-img/thumbnaildev.png" />
+    </div>
+
+
+  <br />
+  <br />
+  <h2>The Problem</h2>
+  The inspiration for creating a vinyl webstore came from my experience of shopping at vinyl stores. Because of the busy-ness and often jumbled nature of vinyls to be sold at various vinyl stores that I had experienced shopping at, I thought of creating a website that would allow me to search for vinyls conveniently. In terms of “convenience,” I wanted to allow users to be able to select their price range and be able to sort vinyls alphabetically. After shopping in vinyl stores, I often wonder whether there had been better options. However, often my searches for vinyls come to quick ends because I am too tired to keep browsing through crates of disordered vinyls. 
+  </p>
+
+  <br />
+
+  <br />
+  <br />
+  <h2> Process</h2>
+  <p>
+    In order to identify which features for filtering and sorting I’d want to incorporate in my vinyl website, I created a competitive analysis chart based on three different webpages that have a favorting function that allows for filtering and sorting. 
+
+  </p>
+  <div class="image-container">
+    <img src="assets/development-img/competitiveAnalysis.png" />
+    </div>
+
+  <h2> Summary of Findings</h2>
+  The three websites I chose all have major differences in their favoriting function. IMDb had a clear visual hierarchy when it came to navigating the sorting and filtering functions. Overall, it had relevant preset sorting and filtering features. The sorting feature appears as a dropdown menu, but it does not allow combining two or more separate sorting selections. The two music sites I chose were less successful in terms of sorting and filtering, but Spotify also had a clear visual hierarchy which made using its features easy to use. The most successful factor in the Spotify favoriting function was the ability to sort alphabetically with any sorting selection. For Soundcloud, the “filter” function was not a filter after all but a search feature that did not work for all but one of the songs in my favorites. I also was not able to sort.
+
+
+  <br />
+  <br />
+  <h2>Solution</h2>
+  <p>
+    I liked the idea of having filtering and sorting work in conjunction for users. IMDb.com was a prime example of this. I decided to implement filtering features that worked well with a sorting feature. For example, if I choose to filter by a price range of $0 - $10, I would want to be able to sort in ascending price order to see cheaper options first and be able to scroll down to more expensive options. 
+    In this, I decided to add a filter to sort by genre and another filter to sort by price. Additionally, I chose to sort based on price in ascending order. Users are able to modify filters and sorting by clicking on respective buttons and can add and remove items from their cart. The cart also has a feature that allows users to reset their additions and has a running total of the vinyls “to be purchased.”
+    
+    </p>
+    <div class="image-container">
+      <img src="assets/development-img/dev-filter.png" />
+      <img src="assets/development-img/dev-cart.png" />
+      <img src="assets/development-img/dev-fullsite.png" />
+      
+      </div>
+
+
+  <br />
+  <br />
+</body>
+</html>
